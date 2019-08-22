@@ -1,0 +1,97 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+.app {
+	height:100vh;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header h1 {
+	margin: 30px 0px 15px 0px;
+	text-align: center;
+	font-size: 3rem;
+	color: rgb(80,100,100);
+}
+
+header p{
+	margin: 0px 0px 0px 180px;
+	color: rgb(80,100,100);
+	font-size: 1.5rem;
+}
+
+div h1{
+	background: #E67E22;
+	color:white;
+	margin-bottom: 170px;
+}
+
+.balls {
+	background: #EBEA91;
+	width: 100%;
+	display: flex;
+}
+
+.balls > div {
+	height: 100px;
+	width : 100px;
+	flex : 1;
+}
+
+.ball1 {
+	background: #34495E;
+}
+
+.ball2 {
+	background: #E67E22;
+}
+
+.ball3 {
+	background: #63C91D;
+}
+
+.ball4 {
+	background: #57F331;
+}
+
+.ball5 {
+	background: #F4E610;
+}
+
+.ball6 {
+	background: #BDF1C3;
+}
+
+.visual > div {
+	position: absolute;
+	height: 50px;
+	width : 50px;
+	border-radius: 50%;
+	bottom:0%;
+	left:20%;
+	z-index: -1;
+}
+
+@keyframes jump{
+	0%{
+		bottom: 0%;
+		left: 20%;
+	}
+
+	50%{
+		bottom: 50%;
+		left:50%;
+	}
+
+	100%{
+		bottom :0%;
+		left:80%;
+	}
+}
+ 
